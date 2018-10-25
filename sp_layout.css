@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 1
+   
+   Layout styles for Slate and Pencil Tutoring
+   Author: Alex A Somoza
+   Date: 10-24-18  
+   
+   Filename: sp_layout.css
+
+*/
+
+
+
+/* Window and Body Styles */
+/* The code below hold the main styles for the page. These consist of mainly style rule for a more responsive design. */
+html {
+    height: 100%;
+
+}
+
+body {
+    width: 95%;
+    min-height: 100%;
+    min-width: 640px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+header,
+ul,
+nav,
+li,
+a {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+/* Row Styles */
+/* The code below hold style rules for grid rows. These help give structure to the grod rowas and at the same time, the website itself. */
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+
+
+/* Page Header Styles */
+/* The code below holds code for the header in the body elements. The style rules consist of spacing rules or how the element should be displayed. */
+body header img {
+    display: block;
+    width: 70%;
+    float: left;
+}
+
+body header nav {
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 30%;
+}
+
+nav a {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* Horizontal Navigation List Styles */
+/* The code below is for the horizontal nav. The difference is all the selectors below have a class that diffentitates this nav from the other. */
+body nav.horizontal li {
+    display: block;
+    width: 12.5%;
+    float: left;
+}
+
+/* Topics Styles */
+/* The code below holds all the code for style rules for the elements with the topc id. These styles adjust the spacing of the eleemnts with and within the topics id. */
+ul#topics li {
+    display: block;
+    width: 20%;
+    float: left;
+    margin-right: 1.5%;
+    margin-left: 0%;
+}
+
+ul#topics li:first-of-type {
+    margin-left: 7.75%;
+}
+
+ul#topics li:last-of-type {
+    margin-right: 7.75%;
+}
+
+ul#topics li img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HR Styles */
+/* This code holds a style rule for the hr element. All the code does is increase the width of the hr element. */
+hr {
+    width: 50%;
+}
+
+
+
+/* Customer Comment Styles */
+/* The code below holds style rules fo the elemnts with and within elements with the commint id. These rules specify spacing and display.  */
+ul#comments {
+    width: 75%;
+    margin: 40px auto 40px auto;
+}
+
+ul#comments li {
+    display: block;
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+ul#comments li img {
+    display: block;
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+ul#commnets li p {
+    float: left;
+    width: 70%;
+}
+
+/* Footer Styles */
+/* the code below holds a style rule for the footer element. All the rule does is make sure it doesn't overlap other elements */
+Footer {
+    clear: both;
+}
